@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Blinker', sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url("./background.jpg");
+    background-size: 100% 100%;
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    width: 80vh;
+    height: 50vh;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    background: linear-gradient(75deg, rgba(255, 255, 255, 0.11), rgba(255, 255, 255, 0.205) 50%);
+}
+
+#content div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#content div label, button{
+    text-transform: uppercase;
+}
+
+#content div textarea{
+    background-color: rgba(255, 255, 255, 0.349);
+    border: 1px solid;
+    outline: none;
+    padding: 1vh;
+    border-radius: 10px;
+    resize: none;
+    border: none;
+    width: 50vh;
+    height: 20vh;
+}
+
+textarea::-webkit-scrollbar {
+    width: 1.5vh;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+textarea::-webkit-scrollbar-track {
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  cursor: default;
+  border-radius: 10px;
+  border-left: 1px solid black;
+}
+
+#content div label{
+    color: black;
+    user-select: none;
+}
+
+#buttons{
+    margin-top: 3vh;
+    width: 40vh;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#buttons button{
+    width: 15vh;
+    height: 5vh;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid cyan;
+    background: linear-gradient(90deg, rgb(13, 96, 129) 0%, rgb(17, 146, 146) 50%);
+    color: aliceblue;
+    font-size: 2vh;
+}
+
+#buttons button:nth-child(2){
+    background: linear-gradient(90deg, rgb(17, 146, 146) 0%, rgb(13, 96, 129) 50%);
+}
+
+#buttons button:hover{
+    opacity: .8;
+    cursor: pointer;
+}
