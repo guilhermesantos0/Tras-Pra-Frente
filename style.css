@@ -15,7 +15,7 @@ body{
     align-items: center;
     justify-content: center;
     background: url("./background.jpg");
-    background-size: 100% 100%;
+    background-size: cover;
 }
 
 #content{
@@ -99,4 +99,16 @@ textarea::-webkit-scrollbar-thumb {
 #buttons button:hover{
     opacity: .8;
     cursor: pointer;
+}
+
+@media (max-width: 500px){
+    body{
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-size: 100vw 100vh;
+    }
+
+    textarea{
+        width: 30vw;
+    }
 }
